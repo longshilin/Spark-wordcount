@@ -3,20 +3,20 @@
 <font size=2>学习用Eclipse+Maven来构建并打包一个简单的单词统计的例程。
 # <font size=4>**第一步 在EclipseIDE中安装Scala插件**
 <font size=2>**在Eclipse中安装Scala插件**
-![这里写图片描述](http://img.blog.csdn.net/20180112175944862)
-![这里写图片描述](http://img.blog.csdn.net/20180112180021386)
-![这里写图片描述](http://img.blog.csdn.net/20180112180033498)
+![](https://i.imgur.com/JvwcFkB.png)
+![](https://i.imgur.com/leivKk8.png)
+![](https://i.imgur.com/nui5ukx.png)
 # <font size=4>**第二步 创建Scala Project**
 <font size=2>**创建Scala 项目**
-![这里写图片描述](http://img.blog.csdn.net/20180112180154489)
-![这里写图片描述](http://img.blog.csdn.net/20180112180202863)
-![这里写图片描述](http://img.blog.csdn.net/20180112180214372)
+![](https://i.imgur.com/IWxNnEs.png)
+![](https://i.imgur.com/c2VTv70.png)
+![](https://i.imgur.com/gRoMlJR.png)
 # <font size=4>**第三步 给Scala项目注入maven依赖**
 <font size=2>**将Scala 项目 转为 Maven 项目**
-![这里写图片描述](http://img.blog.csdn.net/20180112180313033)
-![这里写图片描述](http://img.blog.csdn.net/20180112180409445)
-![这里写图片描述](http://img.blog.csdn.net/20180112180421704)
-![这里写图片描述](http://img.blog.csdn.net/20180112180447093)
+![](https://i.imgur.com/fBm0AzS.png)
+![](https://i.imgur.com/MkVqITC.png)
+![](https://i.imgur.com/Pt01Zv4.png)
+![](https://i.imgur.com/PvvNG35.png)
 `pom.xml`
 
 	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -59,17 +59,17 @@
 <font size=2>当设置完`pom.xml`，我们可以看到有一些错误出些，主要错误来源于编译器交叉编译，Scala源码包版本不对引起的。
 ![这里写图片描述](http://img.blog.csdn.net/20180112181848044)
 <font size=2>在这个项目中，从pom.xml中可以观察到spark版本是`spark-core_2.11`，因此Maven Dependencies中已经集成了`Scala2.11`，因此可以通过指定编译器版本和源码包版本解决Errors。
-![这里写图片描述](http://img.blog.csdn.net/20180112183111819)
-![这里写图片描述](http://img.blog.csdn.net/20180112183443951)
+![](https://i.imgur.com/pWjzU60.png)
+![](https://i.imgur.com/HoWL1M4.png)
 # <font size=4>**第五步 Maven 编译打包**
 <font size=2>通过对项目进行 Maven Install 可以得到可运行的jar包
-![这里写图片描述](http://img.blog.csdn.net/20180117134042915)
-![这里写图片描述](http://img.blog.csdn.net/20180117134056528)
-![这里写图片描述](http://img.blog.csdn.net/20180117134119845)
-![这里写图片描述](http://img.blog.csdn.net/20180112183606972)
-![这里写图片描述](http://img.blog.csdn.net/20180112183702525)
+![](https://i.imgur.com/JfjjqO4.png)
+![](https://i.imgur.com/bwZ8OCW.png)
+![](https://i.imgur.com/1P3KwLG.png)
+![](https://i.imgur.com/s4A8Nex.png)
+![](https://i.imgur.com/ZfGA9Mv.png)
 <font size=2>编译好的jar包中包含的class文件
-![这里写图片描述](http://img.blog.csdn.net/20180112184155650)
+![](https://i.imgur.com/kIGGudZ.png)
 # <font size=4>**第六步 Spark 集群上运行**
 <font size=2>将jar包发送到Spark集群上运行
 
